@@ -1,0 +1,20 @@
+mixin tiles(title, tileImg)
+    article.tile-cont
+        a(href="", target="_blank", rel="").tile-link
+            h2.tile-title=title
+        span.tile-image
+            img(src=tileImg, alt="", srcset="")
+mixin discount(link)
+    article.discount
+        section.content
+            h2.percent 15% <br> off   
+            section.text
+                header MyAdmissionEssay
+                p Use the code at checkout to save 15% on your purchase.
+        button
+            a(href=link, target="_blank") GET CODE
+            div derEW
+        footer.foot 
+            i.far.fa-calendar-alt 
+            div Expire date: 2019-08-09           
+    

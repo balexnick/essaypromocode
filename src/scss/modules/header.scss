@@ -1,0 +1,22 @@
+.head-site{
+    background: #1C172F;
+    padding: 35px 0;
+    font-size: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media(max-width:870px){
+        font-size: 15px;
+    }
+    .head-content{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .title{
+        font-weight: bold;
+        color:#fff;
+        span{
+            color:#57ca6c
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.allDiscounts{
+    .allDiscounts-title{
+        font-weight: 600;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: #757575;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .main{
+        display: flex;
+        padding: 0 50px;
+        flex-wrap: wrap;
+        @media(max-width: 552px){
+            padding: 0 15px;
+        }
+    }
+    .discount{
+        background: #302A4F;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        width: calc(50% - 2.5em);
+        margin: 2em 0 0 2em;
+        color:#fff;
+        padding: 40px;
+
+        @media(max-width:1110px) {
+            width: 100%!important;
+            margin: 1.25em 0 0 0!important;
+        }
+        .content{
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .percent{
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 47px;
+            color: #00D66F;
+            margin-right: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 1px dashed #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 20px 15px;
+        }
+        header{
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+            color: #FFFFFF;
+        }
+        p{
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 31px;
+            color: #FFFFFF;
+        }
+        .foot{
+            margin-top: 15px;
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .far{
+            margin-right: 5px;
+        }
+    }
+}
+
+@import '../../media/media-discounts'
+
+  

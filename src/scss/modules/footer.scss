@@ -1,0 +1,11 @@
+footer.main-foot{
+    background-color: #1B172F;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 25px;
+    color:#fff;
+    @media(max-width: 660px){
+        font-size: 14px;
+    }
+}

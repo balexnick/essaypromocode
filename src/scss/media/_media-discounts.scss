@@ -1,0 +1,49 @@
+@media(max-width:460px){
+    .allDiscounts{
+        .discount{
+            padding: 30px;
+            .percent{
+                font-size: 26px;
+            }
+            header{
+                font-size: 25px;
+            }
+            p,.foot{
+                font-size: 22px
+            }
+        }
+    }
+}
+
+@media(max-width:376px){
+    .allDiscounts{
+        .allDiscounts-title{
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .discount{
+            .percent{
+                font-size: 20px;
+                line-height: 24px;
+            }
+            header{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 23px;
+            }
+            p,.foot{
+                line-height: 20px;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media(max-width:376px){
+    .allDiscounts{
+        .discount{
+            padding: 25px;
+        }
+    }
+}
