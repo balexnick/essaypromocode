@@ -7,13 +7,15 @@ mixin tiles(title, tileImg)
 mixin discount(link)
     article.discount
         section.content
-            h2.percent 15% <br> off   
+            div.percent 15% <br> off   
             section.text
                 header MyAdmissionEssay
                 p Use the code at checkout to save 15% on your purchase.
-        button
-            a(href=link, target="_blank") GET CODE
-            div derEW
+        button.get-code
+            a()
+                span.show-get-code DEREW
+                div.hide-get-code
+                span.hide-text GET CODE 
         footer.foot 
             i.far.fa-calendar-alt 
             div Expire date: 2019-08-09           

@@ -16,6 +16,7 @@ body {
   font-family: $mainFont;
   font-size: $mainFontSize;
   font-weight: $mainFontWeight;
+  position: relative;
 }
 
 
@@ -61,6 +62,5 @@ section,
 @import 'modules/mainPage/head-block.scss';
 @import 'modules/mainPage/main-information.scss';
 @import 'modules/allDiscounts/index.scss';
+@import 'modules/allDiscounts/popup.scss';
 @import 'modules/footer.scss';
-
-

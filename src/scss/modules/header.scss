@@ -1,22 +1,26 @@
-.head-site{
+.head-site {
     background: #1C172F;
-    padding: 35px 0;
+    padding: 25px 0;
     font-size: 25px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @media(max-width:870px){
+
+    @media(max-width:870px) {
         font-size: 15px;
     }
-    .head-content{
+
+    .head-content {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         padding: 0 20px;
     }
-    .title{
+
+    .title {
         font-weight: bold;
-        color:#fff;
-        span{
-            color:#57ca6c
+        color: #fff;
+
+        span {
+            color: #57ca6c
         }
     }
 }
