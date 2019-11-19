@@ -17,7 +17,7 @@
 
     .main {
         display: flex;
-        padding: 0 50px;
+        // padding: 0 50px;
         flex-wrap: wrap;
         justify-content: center;
 
@@ -25,12 +25,12 @@
             justify-content: inherit;
         }
 
-        @media(max-width: $smDesktopWidth) {
-            padding: 0;
-        }
+        // @media(max-width: $smDesktopWidth) {
+        //     padding: 0;
+        // }
 
         @media(max-width: $tableWidth) {
-            padding: 0 15px !important;
+            padding: 0 15px;
         }
     }
 
@@ -136,80 +136,6 @@
             }
         }
 
-        .get-code {
-            background: #FFFFFF;
-            border: 1px solid #00D66F;
-            box-sizing: border-box;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 7px;
-            width: 100%;
-            position: relative;
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 70px;
-            transition: .0s;
-
-            @media(max-width:$midPhoneWidth) {
-                font-size: 20px;
-                line-height: 50px;
-            }
-        }
-
-        .hide-get-code {
-            position: absolute;
-            background: #00D66F;
-            width: 85%;
-            top: -1px;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            border-radius: 5px 0px 0px 5px;
-            transition: .4s;
-            overflow: hidden;
-
-            @media(max-width:$smPhoneWidth) {
-                width: 83%;
-            }
-        }
-
-        .hide-get-code::before {
-            content: "";
-            position: absolute;
-            height: 120%;
-            width: 50px;
-            background: #008d49;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            right: 0;
-            transform: rotate(-24deg);
-            top: -3px;
-            right: -40px;
-            z-index: 11;
-        }
-
-        .get-code:hover .hide-get-code {
-            width: 71.5%;
-            background: #048547;
-        }
-
-        .get-code:hover {
-            border-color: #048547;
-        }
-
-        .hide-text {
-            position: absolute;
-            color: #fff;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%)
-        }
-
-        .show-get-code {
-            width: 100%;
-            display: inline-block;
-            color: #00D66F;
-            text-align: right;
-            padding-right: 10px;
-        }
 
         .foot {
             margin-top: 15px;

@@ -1,0 +1,14 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Not Active Discounts'
+
+block content 
+  section.status-discounts-content
+    include ../modules/header
+    include ../modules/statusDiscounts/active
+    include ../modules/statusDiscounts/not-active
+    include ../modules/footer
+
+
+    

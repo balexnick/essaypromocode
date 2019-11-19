@@ -103,7 +103,7 @@
     border-radius: 0 0 7px 7px;
     background: #fff;
 
-    @media(max-width:$bigPhoneWidth) {
+    @media(max-width:$tableWidth) {
       padding: 10px 15px;
 
     }
@@ -116,7 +116,7 @@
     color: #757575;
     margin: 30px 0;
 
-    span {
+    .myadmis {
       color: #008d49
     }
   }

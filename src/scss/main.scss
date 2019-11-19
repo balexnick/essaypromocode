@@ -23,19 +23,6 @@ body {
 section,
 .section {
   position: relative;
-  // padding: 40px 0;
-
-  // @media screen and (max-width: $desktopWidth) {
-  //   padding: 36px 0;
-  // }
-
-  // @media screen and (max-width: $desktopWidth) {
-  //   padding: 28px 0;
-  // }
-
-  // @media screen and (max-width: $desktopWidth) {
-  //   padding: 20px 0;
-  // }
 }
 
 .container {
@@ -44,23 +31,22 @@ section,
   position: relative;
   margin: 0 auto;
   max-width: $desktopWidth;
-
-  // @media screen and (max-width: $smDesktopWidth) {
-  //   max-width: $tableWidth;
-  // }
-
-  // @media screen and (max-width: $tableWidth) {
-  //   max-width: 100%;
-  // }
-
-  // @media screen and (max-width: $phoneWidth) {
-  //   max-width: $smPhoneWidth;
-  // }
 }
 
+.status-discounts-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+@import 'utils/common.scss';
 @import 'modules/header';
 @import 'modules/mainPage/head-block.scss';
 @import 'modules/mainPage/main-information.scss';
 @import 'modules/allDiscounts/index.scss';
 @import 'modules/allDiscounts/popup.scss';
+@import 'modules/statusDiscount/index.scss';
 @import 'modules/footer.scss';

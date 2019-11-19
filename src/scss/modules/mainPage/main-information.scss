@@ -16,7 +16,7 @@
     }
 
     .inner-cont {
-        padding: 0 45px 45px;
+        padding: 0 20px 45px;
 
         @media(max-width:$bigPhoneWidth) {
             padding: 0;
@@ -42,14 +42,14 @@
         font-weight: 700;
         letter-spacing: 7px;
 
-        @media(max-width: $tableWidth) {
+        @media(max-width: $tableWidth) and (min-width: $bigPhoneWidth) {
             letter-spacing: 2px;
             font-size: 20px;
         }
 
         @media(max-width: $bigPhoneWidth) {
-            letter-spacing: 5px !important;
-            font-size: 25px !important;
+            letter-spacing: 5px;
+            font-size: 25px;
         }
 
     }
@@ -58,11 +58,12 @@
         color: #585858;
         padding: 50px 0;
 
-        @media(max-width:$bigPhoneWidth) {
+        @media(max-width:$tableWidth) {
             font-weight: 600;
             font-size: 23px;
             line-height: 28px;
             letter-spacing: inherit;
+            padding: 25px 0;
         }
     }
 
@@ -92,19 +93,19 @@
         margin: 2.5em 0 0 2.5em;
         position: relative;
 
-        @media(max-width: $smDesktopWidth) {
+        @media(max-width: $smDesktopWidth) and (min-width: $tableWidth) {
             width: calc(50% - 2.5em);
             margin: 2.5em 0 0 2.5em;
         }
 
-        @media(max-width: $tableWidth) {
+        @media(max-width: $tableWidth) and (min-width: $bigPhoneWidth) {
             width: calc(50% - 1.25em);
             margin: 1.25em 0 0 1.25em;
         }
 
         @media(max-width: $bigPhoneWidth) {
-            width: 100% !important;
-            margin: 1.25em 0 0 0 !important;
+            width: 100%;
+            margin: 1.25em 0 0 0;
         }
     }
 
@@ -197,5 +198,9 @@
     .inner-foot-list {
         margin-top: 50px;
         padding-left: 25px;
+
+        @media(max-width:$tableWidth) {
+            margin-top: 25px;
+        }
     }
 }
