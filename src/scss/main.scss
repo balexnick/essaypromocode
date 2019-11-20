@@ -1,6 +1,6 @@
-@import "utils/libs";
-@import "utils/vars";
 @import "utils/reset";
+@import "utils/vars";
+
 
 html {
   line-height: $mainLineHeight;
@@ -39,14 +39,3 @@ section,
   flex-direction: column;
   justify-content: space-between;
 }
-
-
-
-@import 'utils/common.scss';
-@import 'modules/header';
-@import 'modules/mainPage/head-block.scss';
-@import 'modules/mainPage/main-information.scss';
-@import 'modules/allDiscounts/index.scss';
-@import 'modules/allDiscounts/popup.scss';
-@import 'modules/statusDiscount/index.scss';
-@import 'modules/footer.scss';

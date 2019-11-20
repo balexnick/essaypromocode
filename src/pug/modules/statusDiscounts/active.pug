@@ -1,5 +1,7 @@
+include ../../utils/mixins
 section.status-discount
   section.container
-    include ./desktop 
-    include ./mobile
+    +status-discount('open-popup')
+    +mobile-status('open-popup')
+
 include ../popupWindow

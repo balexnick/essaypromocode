@@ -19,7 +19,11 @@ module.exports = {
     paths: PATHS
   },
   entry: {
-    app: PATHS.src
+    'index': './src/js/index.js',
+    'essey-discount': './src/js/essey-discount.js',
+    'active-discount': './src/js/active-discount.js',
+    'not-active-discount': './src/js/not-active-discount.js',
+
   },
   output: {
     filename: `js/[name].js`,
@@ -79,7 +83,8 @@ module.exports = {
       page =>
         new HtmlWebpackPlugin({
           template: `${PAGES_DIR}/${page}`,
-          filename: `./${page.replace(/\.pug/, ".html")}`
+          filename: `./${page.replace(/\.pug/, ".html")}`,
+          inject: false
         })
     )
   ]
