@@ -61,11 +61,18 @@
         padding: 50px 0;
 
         @media(max-width:$tableWidth) {
-            font-weight: 600;
-            font-size: 23px;
             line-height: 28px;
             letter-spacing: inherit;
             padding: 25px 0;
+            font-weight: 600;
+        }
+
+        @media(max-width:$tableWidth) and(min-width:$phoneWidth) {
+            font-size: 23px;
+        }
+
+        @media(max-width:$phoneWidth) {
+            font-size: 18px;
         }
     }
 

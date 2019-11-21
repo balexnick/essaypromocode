@@ -14,6 +14,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         @media(max-width:$desktopWidth) {
             padding: 0 20px;
@@ -27,5 +28,13 @@
         span {
             color: #57ca6c
         }
+    }
+
+    .head-link-green {
+        background: rgba(42, 36, 73, 0.58);
+        border-radius: 7px 7px 0px 0px;
+        padding: 10px 20px;
+        border-bottom: 1px solid #00D66F;
+        box-sizing: border-box;
     }
 }

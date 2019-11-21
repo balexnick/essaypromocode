@@ -26,6 +26,7 @@
   .content {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     margin: 40px 0;
 
     @media(max-width:$tableWidth) {
@@ -188,7 +189,7 @@
 
   .top,
   .popular {
-    width: 15vw;
+    width: 18vw;
     border-radius: 7px;
     font-size: 17px;
 
