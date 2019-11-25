@@ -3,11 +3,13 @@ let text = document.querySelector(".copy-code");
 let button = document.querySelector(".copy-btn");
 let test = document.querySelector(".test");
 
+window.onload = function () {
+  document.querySelector('.popup').style.cssText = 'display: flex'
+}
+
 openPopup.forEach((item) => {
   item.addEventListener('click', () => {
-    document.querySelector('.popup').style.cssText = `
-        display: flex
-      `
+    document.querySelector('.popup').style.cssText = 'display: flex'
   })
 })
 

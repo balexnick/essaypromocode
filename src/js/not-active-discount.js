@@ -6,13 +6,14 @@ import '../scss/modules/popup.scss';
 import '../scss/modules/footer.scss';
 import '../scss/utils/common.scss';
 
+import './common/open-window'
 import './common/popup.js'
 
-window.onload = function () {
-  document.querySelector(".yakor").onclick = function () {
+document.querySelectorAll(".yakor").forEach(item => {
+  item.onclick = function () {
     var elmnt = document.querySelector(".oops-title");
     elmnt.scrollIntoView({
       behavior: "smooth"
     });
   }
-}
+})

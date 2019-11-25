@@ -4,11 +4,11 @@ import '../scss/modules/allDiscounts/index.scss';
 import '../scss/modules/popup.scss';
 import '../scss/modules/footer.scss';
 
+
+import './common/open-window'
 import './common/popup.js'
 import './common/pagination.min.js'
 
-
-console.log("dfsdf")
 
 
 $("#listShow").cPager({

@@ -5,4 +5,5 @@ import '../scss/modules/popup.scss';
 import '../scss/modules/footer.scss';
 import '../scss/utils/common.scss';
 
+import './common/open-window'
 import './common/popup.js' 
