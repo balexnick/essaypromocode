@@ -23,7 +23,6 @@ module.exports = {
     'essey-discount': './src/js/essey-discount.js',
     'active-discount': './src/js/active-discount.js',
     'not-active-discount': './src/js/not-active-discount.js',
-
   },
   output: {
     filename: `js/[name].js`,

@@ -3,8 +3,12 @@ let text = document.querySelector(".copy-code");
 let button = document.querySelector(".copy-btn");
 let test = document.querySelector(".test");
 
+
 window.onload = function () {
-  document.querySelector('.popup').style.cssText = 'display: flex'
+  if (JSON.parse(localStorage.getItem('not-active-page-popup')) === true) {
+    document.querySelector('.popup').style.cssText = 'display: flex'
+    localStorage.setItem('not-active-page-popup', false)
+  }
 }
 
 openPopup.forEach((item) => {
@@ -14,7 +18,6 @@ openPopup.forEach((item) => {
 })
 
 button.addEventListener("click", function (e) {
-  console.log(e)
   e.stopPropagation()
   var x = document.createElement("INPUT");
   x.className = "input-copy";
@@ -46,5 +49,4 @@ function returnToDefault() {
 
 document.querySelector('.popup').addEventListener('click', () => {
   returnToDefault()
-
 })

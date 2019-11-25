@@ -17,3 +17,11 @@ document.querySelectorAll(".yakor").forEach(item => {
     });
   }
 })
+
+let openPopup = document.querySelectorAll('.open-popup')
+openPopup.forEach((item) => {
+  item.addEventListener('click', () => {
+    localStorage.setItem('not-active-page-popup', true)
+  })
+})
+
