@@ -9,14 +9,6 @@ import '../scss/utils/common.scss';
 import './common/popup.js'
 
 window.onload = function () {
-  function scrollToView() {
-    document.querySelector(".oops-title").scrollIntoView({
-      behavior: "smooth"
-    });
-  }
-
-  setTimeout(scrollToView, 0)
-
   document.querySelector(".yakor").onclick = function () {
     var elmnt = document.querySelector(".oops-title");
     elmnt.scrollIntoView({
