@@ -7,6 +7,4 @@ import '../scss/utils/common.scss';
 
 import './common/open-window'
 import './common/popup.js'
-window.onload = function () {
-  document.querySelector('.popup').style.cssText = 'display: flex'
-}
+

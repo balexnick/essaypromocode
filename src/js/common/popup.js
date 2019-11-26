@@ -10,10 +10,9 @@ window.onload = function () {
     localStorage.setItem('not-active-page-popup', false)
   }
 }
-
 openPopup.forEach((item) => {
   item.addEventListener('click', () => {
-    document.querySelector('.popup').style.cssText = 'display: flex'
+    localStorage.setItem('not-active-page-popup', true)
   })
 })
 

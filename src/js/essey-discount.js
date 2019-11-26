@@ -9,9 +9,6 @@ import './common/open-window'
 import './common/popup.js'
 import './common/pagination.min.js'
 
-window.onload = function () {
-  document.querySelector('.popup').style.cssText = 'display: flex'
-}
 
 
 $("#listShow").cPager({
